@@ -78,3 +78,5 @@ public void deleteProductById(long id) {​​​​​         Product t
 
                 th:href='@{​​​​​/deleteProduct/}​​​​​+ ${​​​​​product.id}​​​​​'>Delete</a></td>
 
+<a th:href='@{/editProduct/}+ ${product.id}'>Edit</a> | <a
+                th:href='@{/deleteProduct/}+ ${product.id}'>Delete</a></td>
