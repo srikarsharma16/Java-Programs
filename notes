@@ -56,3 +56,25 @@ h1, h4 {
     text-align: center;
 }
 </style>
+
+
+//// edit and delete
+
+
+
+public void deleteProductById(long id) {​​​​​         Product tobeDeleted = null;         for (Product productDB : allProducts) {​​​​​             if (productDB.getId() == id) {​​​​​                 tobeDeleted = productDB;                 break;             }​​​​​
+
+        }​​​​​         allProducts.remove(tobeDeleted);     }​​​​​
+
+[11:01 PM] shadab (Guest)
+@GetMapping("/deleteProduct/{​​​​​id}​​​​​")
+
+    public String deleteProduct(@PathVariable long id) {​​​​​         productService.deleteProductById(id);         return "redirect:/dashboard";
+
+    }​​​​​
+
+[11:01 PM] shadab (Guest)
+<td><a th:href='@{​​​​​/editProduct/}​​​​​+ ${​​​​​product.id}​​​​​'>Edit</a> | <a
+
+                th:href='@{​​​​​/deleteProduct/}​​​​​+ ${​​​​​product.id}​​​​​'>Delete</a></td>
+
