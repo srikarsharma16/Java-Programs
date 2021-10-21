@@ -1,3 +1,18 @@
+/////////////////////////////////////////////////////////////
+application properties
+
+
+server.port=9090
+
+
+spring.datasource.driverClass=org.mariadb.jdbc.Driver
+spring.datasource.url=jdbc:mariadb://localhost:3306/boot_camp_db
+spring.datasource.username=root
+spring.datasource.password=root
+
+
+
+/////////////////////////////////////////////////////////////
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:context="http://www.springframework.org/schema/context"
