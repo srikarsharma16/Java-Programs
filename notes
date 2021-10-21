@@ -31,3 +31,28 @@ http://www.springframework.org/schema/context/spring-context.xsd">ma/context/spr
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
+
+
+///styling dashboard.html
+<style type="text/css">
+table {
+    border: 1px solid green;
+    width: 60%;
+    margin-left: 20%;
+    border-collapse: collapse;
+}
+ 
+td, th {
+    border: 1px solid green;
+    text-align: center;
+}
+ 
+th {
+    background: yellow;
+    color: red;
+}
+ 
+h1, h4 {
+    text-align: center;
+}
+</style>
