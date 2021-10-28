@@ -1,3 +1,22 @@
+def groovyUtils = new com.eviware.soapui.GroovyUtils(context)
+def holder =groovyUtils.getXmlHolder(messageExchange.responseContent)
+ 
+holder.namespace("ns1") = "http://tempuri.org/"
+ 
+def addResult = holdr.getNodavalue("ns1:AddResult")
+ 
+log.info "Result is :" + addResult
+ 
+if(addResult=="48")
+{
+    log.info "Pass"
+}
+else
+{
+    log.info "Fail"
+}
+
+///////////////////////////////////////////////////////////////
 <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-boot-starter</artifactId>
